@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 1</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+
+        <div class="content" id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque voluptas cum laboriosam necessitatibus ipsa, reprehenderit, unde minus fugiat distinctio quasi quo voluptatum placeat inventore maiores. Animi repudiandae nam quidem omnis at ea id reprehenderit quos temporibus. Architecto veniam quaerat praesentium asperiores corrupti molestiae tempora ex tempore neque eveniet earum itaque dicta hic, id numquam dolorum! Est dicta fuga ex ullam nobis molestiae nemo! Impedit, dolore fugiat?</p>
+        </div>
+        <script>
+            var name = "Abhi";
+            var skill = "Web dev";
+            var temp = `${name} is learning ${skill}.`
+            console.log(temp);
+            var len = name.length;
+            console.log("Length is "+len);
+
+            document.getElementById('content').innerHTML = '<h3>this is an h3 heading.</h3>';
+        </script>
+    </div>
+</body>
+</html>

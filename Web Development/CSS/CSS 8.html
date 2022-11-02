@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 8 (Flexbox)</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is flexbox trial</h1>
+    <div class="container">
+        <div class="item" id="item1">1st box</div>
+        <div class="item" id="item2">2nd box</div>
+        <div class="item" id="item3">3rd box</div>
+        <div class="item" id="item4">4th box</div>
+        <div class="item" id="item5">5th box</div>
+        <div class="item" id="item6">6th box</div>
+    </div>
+</body>
+</html>
