@@ -192,7 +192,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 34px;
+    padding-bottom: 3px;
 }
 
 .contact-box input,
@@ -210,6 +210,14 @@ html {
 .contact-box label {
     font-family: 'Bree Serif', serif;
     font-size: 1.2rem;
+}
+
+#subbtn {
+    /* position: relative;
+    top: -2rem;
+    left: 37rem; */
+    display: flex;
+    justify-content: center;
 }
 
 
