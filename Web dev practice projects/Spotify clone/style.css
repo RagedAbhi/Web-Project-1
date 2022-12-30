@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about{
+    padding: 15px;
+}
+
+#top{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#bottom{
+    font-size: 15px;
+    opacity: 50%;
+}
+
+
+.indexItem {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    list-style-type: none;
+    width: 25%;
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+
+}
+
+#i1 {
+    padding: 15px 15px;
+    position: fixed;
+    top: 70px;
+    left: 11px;
+}
+
+#i1 li {
+    color: #bdc3c7;
+    padding: 12px 0;
+}
+
+#i1 li:hover {
+    color: white;
+}
+
+#i2 {
+    position: fixed;
+    padding: 15px 15px;
+    top: 220px;
+    left: 11px;
+    border-bottom: 1px solid grey;
+}
+
+#i2 li {
+    color: #bdc3c7;
+    padding: 10px 0;
+}
+
+#i2 li:hover {
+    color: white;
+}
+
+.brand img {
+    width: 44px;
+    padding: 19px 3px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    font-weight: bold;
+    font-size: 1.3rem;
+    left: 1.5rem;
+    top: 1px;
+    z-index: -1;
+}
+
+.bottom {
+    display: flex;
+    background-color: #181818;
+    position: sticky;
+    height: 90px;
+    color: white;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    width: 20vw;
+}
+
+#songprofile {
+    width: 25%;
+    margin-top: 8px;
+    padding: 8px 16px;
+}
+
+.songinfo {
+    position: relative;
+    font-size: 0.8rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songinfo img {
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    position: fixed;
+    bottom: 15px;
+    right: 375px;
+}
+
+.icons {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.icons i {
+    padding: 15px 8px;
+}
+
+/* Progress Bar */
+input[type="range"] {
+    display: block;
+    -webkit-appearance: none;
+    background-color: #bdc3c7;
+    width: 35vw;
+    height: 0.5vh;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    /* opacity: 0; */
+}
+
+​input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: white;
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+}
+
+.bar span{
+    padding: 0 10px;
+}
+
+.songAbout {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    left: 24rem;
+    width: 69.5%;
+    background-image: linear-gradient(#0546ff, #171717);
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songAbout img {
+    width: 20%;
+    margin-top: 20px;
+    padding: 20px 30px;
+}
+
+.songAbout h1 {
+    color: white;
+    padding-bottom: 18px;
+}
+
+.songItemContainer {
+    min-height: 55vh;
+    /* Controls position of bottom bar */
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin-top: 0rem;
+    margin-left: 384px;
+    /* margin: 340px 380px; */
+    width: 68.8%;
+    padding: 34px 5px;
+    background-image: linear-gradient(#171717, black);
+    flex-direction: column;
+}
+
+.songItem {
+    cursor: pointer;
+    height: 34px;
+    display: flex;
+    background-color: #0548ff00;
+    color: white;
+    /* margin: 12px 0; */
+    padding: 12px 0;
+    padding-left: 34px;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem:hover{
+    margin: 0;
+    /* padding: 0; */
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.215);
+}
+
+.songItem img {
+    width: 42px;
+    margin: 0 2.5px;
+    padding: 15px;
+}
+
+.songlistplay{
+    display: flex;
+    align-items: center;
+}
+
+.timestamp {
+    position: absolute;
+    right: 0;
+    margin: 0 23px;
+}
+
+.timestamp i {
+    padding-left: 10px;
+    cursor: pointer;
+}

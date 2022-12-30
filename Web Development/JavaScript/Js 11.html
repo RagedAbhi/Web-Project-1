@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 11 (Date and time)</title>
+</head>
+
+<style>
+    .container{
+        background-color: rgb(108, 162, 244);
+        padding: 10px;
+        border: 5px solid rgb(107, 144, 255);
+        border-radius: 23px;
+        text-align: center;
+    }
+    #time{
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="container">
+        The time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time code");
+        let now = new Date();
+        console.log(now);
+
+        let rdt = new Date(0);
+        console.log(rdt); //Reference time
+
+        // let newdt = new Date('2029-09-30');
+        // console.log(newdt);
+
+        // let yr = now.getFullYear();
+        // console.log(yr);
+
+        // let dt = now.getDate();
+        // console.log(dt);
+        function updatetime(){
+            let time = new Date();
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(updatetime,1000);
+
+        </script>
+</body>
+</html>
