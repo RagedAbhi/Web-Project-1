@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 9 (Listening to events)</title>
+</head>
+<style>
+    #btn {
+        padding: 8px 5px;
+        border: 2px solid cyan;
+        background-color: orange;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>This is the body</h1>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt animi deserunt aspernatur obcaecati,
+            consequatur, quod sint voluptatem earum deleniti ut atque quis odio quas voluptas in velit! Quidem totam
+            nobis magni obcaecati reprehenderit vitae atque, accusamus, incidunt, amet nemo corporis. Molestiae
+            reiciendis placeat inventore, saepe harum ex veritatis nostrum incidunt soluta suscipit quos, odit, pariatur
+            atque vitae? Velit magnam quas eos cupiditate optio. Qui praesentium laboriosam maxime vel tempore eligendi
+            dignissimos accusamus odio, provident aliquid exercitationem minima voluptatum blanditiis atque obcaecati
+            quas aspernatur ullam repudiandae cum magnam, quisquam culpa ipsam rerum. Similique, illum dicta libero in
+            soluta officia dolore error totam reiciendis iste suscipit possimus voluptate quidem quas dolor laboriosam
+            dolorem aperiam reprehenderit sint enim vel perferendis necessitatibus! Facilis natus iste ipsam cumque.
+            Iusto soluta architecto exercitationem perferendis reiciendis obcaecati necessitatibus eveniet doloribus
+            quisquam, neque optio cumque tenetur similique fuga non omnis! Veritatis, deleniti! Velit ipsa voluptate
+            dicta ad quisquam! Iusto eaque aliquid rerum quos numquam corrupti porro, dolores dicta voluptatibus maxime
+            aut doloremque omnis atque soluta voluptatem voluptate nihil ipsum impedit repellat voluptas ex. Nobis quis
+            labore adipisci neque ratione praesentium, esse id laborum odit, sequi, ea repellat pariatur aliquam dolores
+            minus doloribus dolorum dolor libero ducimus eaque. Saepe itaque temporibus sed asperiores nisi harum ipsam
+            earum nulla repellat, sapiente atque sint reprehenderit fugiat dolorum eos totam? Excepturi, sed. Mollitia
+            nesciunt a, eum quod aliquam cupiditate non blanditiis eaque consectetur, facere laboriosam.</p>
+    </div>
+    <button id="btn" onclick=togglehide()>Show/Hide</button>
+</body>
+
+<script>
+    let para = document.getElementById("para");
+    para.addEventListener('mouseover', function run(){
+        console.log("Mouse inside");
+    })
+    function togglehide() {
+        // let btn = document.getElementById("btn");
+        // let para = document.getElementById("para");
+        if (para.style.display != 'none') {
+            para.style.display = 'none';
+        }
+        else {
+            para.style.display = 'block';
+        }
+    }
+
+</script>
+
+</html>
