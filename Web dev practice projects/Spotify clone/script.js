@@ -84,6 +84,8 @@ document.getElementById('next').addEventListener('click', () => {
     audioElement.src = `songs/${songIndex + 1}.mp3`;
     audioElement.currentTime = 0;
     audioElement.play();
+    masterPlay.classList.remove('fa-circle-play');
+    masterPlay.classList.add('fa-circle-pause');
     masterSongName.innerText = songs[songIndex].songName;
     songprofile.src = `covers/${songIndex+1}.jpg`;
 
@@ -99,6 +101,8 @@ document.getElementById('previous').addEventListener('click', () => {
     audioElement.src = `songs/${songIndex + 1}.mp3`;
     audioElement.currentTime = 0;
     audioElement.play();
+    masterPlay.classList.remove('fa-circle-play');
+    masterPlay.classList.add('fa-circle-pause');
     masterSongName.innerText = songs[songIndex].songName;
     songprofile.src = `covers/${songIndex+1}.jpg`;
 })
