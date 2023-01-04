@@ -44,6 +44,7 @@ Array.from(boxes).forEach(element => {
     element.addEventListener('click', () => {
         bgmusic.play();
         if (boxText.innerText === "") {
+            haha()
             boxText.innerText = turn;
             turn = changeTurn();
             turnmusic.play();
@@ -68,6 +69,35 @@ reset.addEventListener('click', () => {
     document.querySelector('.imgbox').getElementsByTagName('img')[0].style.opacity = 0;
     gameovermusic.pause();
 })
+
+function getRandomInt() {
+
+    return Math.floor(Math.random() * 3);
+}
+
+function haha() {
+    let p = getRandomInt();
+    if(p===0){
+        var n="X";
+    }
+    else if(p===1){
+        var n="O";
+    }
+    else{
+        var n="";
+    }
+
+    let boxes = document.getElementsByClassName("box");
+    Array.from(boxes).forEach(element => {
+        let boxText = element.querySelector('.boxText');
+        if(boxText.innerText==="X"){
+            boxText.innerText=n;
+        }
+        else if(boxText.innerText==="O"){
+            boxText.innerText=n;
+        }
+    })
+}
 
 function darkmode() {
     // var p = document.getElementById("css").href;

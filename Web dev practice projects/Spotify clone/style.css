@@ -35,7 +35,6 @@ nav {
     /* align-items: center; */
     list-style-type: none;
     width: 25%;
-    background-color: black;
     font-family: 'Ubuntu', sans-serif;
     color: white;
 
@@ -60,6 +59,7 @@ nav {
 #i2 {
     position: fixed;
     padding: 15px 15px;
+    width: 21vw;
     top: 220px;
     left: 11px;
     border-bottom: 1px solid grey;
@@ -187,7 +187,7 @@ input[type="range"]::-webkit-slider-thumb {
     z-index: 1;
     position: relative;
     left: 24rem;
-    width: 69.5%;
+    width: 73.9vw;
     background-image: linear-gradient(#0546ff, #171717);
     color: white;
     font-family: 'Varela Round', sans-serif;
@@ -213,7 +213,7 @@ input[type="range"]::-webkit-slider-thumb {
     margin-top: 0rem;
     margin-left: 384px;
     /* margin: 340px 380px; */
-    width: 68.8%;
+    width: 73.2vw;
     padding: 34px 5px;
     background-image: linear-gradient(#171717, black);
     flex-direction: column;
