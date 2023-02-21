@@ -5,9 +5,9 @@ function App() {
     <>
       <nav className='bg-purple-500 flex justify-between'>
         <ul className="flex space-x-4 py-3 px-3 text-lg text-white">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li className='hover:font-bold'>Home</li>
+          <li className='hover:font-bold'>About</li>
+          <li className='hover:font-bold'>Contact</li>
         </ul>
         <ul className="flex space-x-4 py-3 px-3 text-lg text-white">
           <li>Logo</li>
