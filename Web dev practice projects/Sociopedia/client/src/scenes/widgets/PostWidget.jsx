@@ -3,7 +3,7 @@ import {
     ChatBubbleOutlined,
     FavoriteBorderOutlined,
     FavoriteOutlined,
-    RepeatOnSharp,
+    // RepeatOnSharp,
     ShareOutlined
 } from "@mui/icons-material"
 import { Box, Divider, IconButton, Typography, useTheme } from "@mui/material"
@@ -85,7 +85,11 @@ const PostWidget = ({
 
                     <FlexBetween gap="0.3rem">
                         <IconButton onClick={() => setIsComments(!isComments)}>
-                            <ChatBubbleOutlineOutlined />
+                            {isComments ? (
+                                <ChatBubbleOutlined />
+                            ) : (
+                                <ChatBubbleOutlineOutlined />
+                            )}
                         </IconButton>
                         <Typography>{comments.length}</Typography>
                     </FlexBetween>
