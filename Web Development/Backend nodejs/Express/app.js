@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+
 const app = express();
 const port = 80;
 
@@ -55,6 +56,6 @@ app.post('/', (req, res) => {
     let outputToWrite = `The client is ${name}, age ${age}, gender ${gender}, lives in ${address} and is ${more}.`
     fs.writeFileSync('output.txt', outputToWrite)
     
-    const params = { 'message': "Your form has been submitted successfully." };
+    const params = { 'content': "Your form has been submitted successfully." };
     res.status(200).render('index.pug', params);
 })
